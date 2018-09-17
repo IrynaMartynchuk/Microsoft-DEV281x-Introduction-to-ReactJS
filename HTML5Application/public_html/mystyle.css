@@ -1,0 +1,50 @@
+
+#root {
+  padding-left: 10%;
+  padding-right: 10 px;
+}
+
+#row {
+  font-weight:bold;
+  background-color: #E8E7E7;
+}
+
+table {
+    border-collapse: collapse;
+  border-color: grey;
+  width: 90%;
+}
+
+td {
+  border: 0.5px solid black;
+}
+h2 {
+  color:grey;
+  font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 1.2em;
+    line-height: 1.2em;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    -webkit-font-smoothing: antialiased;
+}
+div {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 25px;
+}
+button {
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #222;
+  border: 1px solid #d2c9c9;
+    border-radius: 3px;
+  background-color: #f1f1f1;
+  background-image: linear-gradient(#f1f1f1,#d9d1d1);
+  font-weight: bold;
+  font-size: 0.8125em;
+}

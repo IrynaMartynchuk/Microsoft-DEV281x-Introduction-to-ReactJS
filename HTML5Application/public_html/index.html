@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" type="text/css" href="mystyle.css">
+       <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+       <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+  </head>
+  <body>
+      <div id="root"></div>
+      <script type="text/babel">
+       
+    
+    function Heading(props){
+  return( 
+  <div>
+  <h2>{props.title}</h2>
+  </div>
+  )
+}
+function Paragraph(props){
+    return <p> {props.title}</p>
+}
+function Checkbox(props){
+  return (
+  <div>
+  {props.title}
+  <input type="checkbox" id="coding" name="interest" value="coding"/>
+  </div>
+  )
+}
+function DropdownList(props){
+  return (
+  <div>
+  {props.title}
+  <select>
+    <option value ="{props.value[0]}">{props.value[0]}</option>
+    <option value ="{props.value[1]}">{props.value[1]}</option>
+    <option value ="{props.value[2]}">{props.value[2]}</option>
+    <option value ="{props.value[3]}">{props.value[3]}</option>
+</select>
+  </div>
+  )
+}
+
+function Button(props){
+return <button>{props.name}</button>
+}
+function Table(props){
+  return (
+  <div>
+  <table>
+  <tr id="row">
+  <th>Year</th>
+  <th>Model</th>
+  <th>Price</th>
+  <th>Buy</th>
+  </tr>
+  <tr>
+  <td>{props.box[0]}</td>
+  <td>{props.box[1]}</td>
+  <td>{props.box[2]}</td>
+  <td>{props.box[3]}</td>
+  </tr>
+  </table>
+  </div>
+  )
+}
+function App(props){
+return(
+<div>
+<Heading title = "Welcome to React Transportation"/>
+<Paragraph title = "The best place to buy vehicles online"/>
+<Heading title = "Choose Options"/>
+<Checkbox title = "New Only"/>
+<DropdownList title = "Select Type" value = {["All", "Cars", "Trucks", "Convertibles"]}/>
+<Heading title = "Cars"/>
+<Table box = {["2013", "A", "32000$", <Button name = "Buy Now"/>]}/>
+<Table box = {["2011", "B", "4400$", <Button name = "Buy Now"/>]}/>
+<Table box = {["2016", "B", "15500$", <Button name = "Buy Now"/>]}/>
+<Heading title = "Trucks"/>
+<Table box = {["2014", "D", "18000$", <Button name = "Buy Now"/>]}/>
+<Table box = {["2013", "E", "5200$", <Button name = "Buy Now"/>]}/>
+<Heading title = "Convertibles"/>
+<Table box = {["2009", "F", "2000$", <Button name = "Buy Now"/>]}/>
+<Table box = {["2010", "G", "6000$", <Button name = "Buy Now"/>]}/>
+<Table box = {["2012", "H", "12500$", <Button name = "Buy Now"/>]}/>
+<Table box = {["2013", "E", "5200$", <Button name = "Buy Now"/>]}/>
+<Table box = {["2017", "M", "50000$", <Button name = "Buy Now"/>]}/>
+
+</div>
+)}
+
+ReactDOM.render(
+
+    <App/>,
+
+    document.getElementById("root")
+
+)
+      </script>
+  </body>
+</html>
